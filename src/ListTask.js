@@ -9,6 +9,8 @@ const ListTask = ({li}) => {
 
     <div>
        <div className='card'>
+        
+{/* all my task  and filter*/}
 
         {(li=="true")? tasks.filter(el=>el.isDone===true).map(tas=><Task task={tas}/>):
         (li=="false")? tasks.filter(el=>el.isDone===false).map(tas=><Task task={tas}/>):

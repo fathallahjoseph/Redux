@@ -1,6 +1,4 @@
-import React from 'react'
-import ListTask from './ListTask'
-
+import React from 'react'//imp react 
 const Task = ({task}) => {
   return (
     <div>
