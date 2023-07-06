@@ -9,8 +9,16 @@ const AddTask = () => {
   
 
   return (
-    <div><input placeholder='description' type='text' ref={desc}/>
-    <button onClick={()=>{dispatch(Addtask({Id:uuidv4(),Description:desc.current.value,isDone:false}))}}>Add TASK</button>
+    <div>
+      <input className='inputs' 
+      minlength="10" 
+      maxlength="60" 
+      size="60" 
+      placeholder='Write Description Task'
+       type='text'
+        ref={desc}
+        required/>
+    <button onClick={()=>{dispatch(Addtask({Id:uuidv4(),Description:desc.current.value,isDone:false}))}}>Add Task</button>
     </div>
   )
 }
